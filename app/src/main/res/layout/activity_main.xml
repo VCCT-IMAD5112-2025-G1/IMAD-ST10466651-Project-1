@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textMeals4"
+        android:id="@+id/textMeals"
         android:layout_width="275dp"
         android:layout_height="275dp"
         android:layout_marginStart="67dp"
@@ -40,7 +40,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/reset"
         app:layout_constraintTop_toBottomOf="@id/textTime"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintVertical_bias="0.031"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/reset"
@@ -54,7 +55,8 @@
         app:layout_constraintEnd_toStartOf="@id/tips"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textTime"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.029"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/textTime"
@@ -64,6 +66,7 @@
         android:layout_marginTop="63dp"
         android:layout_marginEnd="177dp"
         android:layout_marginBottom="453dp"
+        android:autofillHints="Time of Day"
         android:fontFamily="serif"
         android:hint="Time Of Day"
         android:textAlignment="center"
@@ -73,7 +76,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHint" />
+        app:layout_constraintTop_toBottomOf="@+id/textHint"
+        tools:ignore="HardcodedText,TextFields" />
 
     <TextView
         android:id="@+id/textHint"
@@ -91,7 +95,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textName"
-        app:layout_constraintVertical_bias="0.00999999" />
+        app:layout_constraintVertical_bias="0.00999999"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textName"
@@ -106,7 +111,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintVertical_bias="0.072"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/timeSuggestion"

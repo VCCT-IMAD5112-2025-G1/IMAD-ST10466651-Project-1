@@ -10,10 +10,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import za.co.varsitycollege.st10466651_Assignment1.R
+//import za.co.varsitycollege.st10466651_Assignment1.R
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // this is an array for Breakfast
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
         // get the tips button
         val tips = findViewById<Button>(R.id.tips)
         // get the names text view
-        val names = findViewById<TextView>(R.id.textName)
+        //val names = findViewById<TextView>(R.id.textName)
         // get the meals text view
         val meals = findViewById<TextView>(R.id.textMeals)
         // get the time edit text view
@@ -126,7 +126,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         tips?.setOnClickListener {
-            var print = ""
             val timeOfDay = time.text.toString().trim().lowercase()
             val validTimeOfDay = listOf("breakfast","Breakfast", "mid-morning","Mid-morning",
                 "lunch", "Lunch", "mid-afternoon", "Mid-afternoon", "dinner", "Dinner")
