@@ -1,5 +1,6 @@
 package za.co.varsitycollege.st10466651_Assignment1
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -12,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import za.co.varsitycollege.st10466651_Assignment1.R
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // this is an array for Breakfast
@@ -126,7 +128,8 @@ class MainActivity : AppCompatActivity() {
         tips?.setOnClickListener {
             var print = ""
             val timeOfDay = time.text.toString().trim().lowercase()
-            val validTimeOfDay = listOf("breakfast", "mid-morning", "lunch", "mid-afternoon", "dinner")
+            val validTimeOfDay = listOf("breakfast","Breakfast", "mid-morning","Mid-morning",
+                "lunch", "Lunch", "mid-afternoon", "Mid-afternoon", "dinner", "Dinner")
             var counter = 1
 
             if (timeOfDay.isEmpty() || !validTimeOfDay.contains(timeOfDay)) {
@@ -153,7 +156,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            if (time.text.toString() == "breakfast" ) {
+            if (time.text.toString() == "breakfast") {
                 meals.text = "Breakfast Dishes:\n\n"
                 repeat(3) {
                     // Randomize the array
