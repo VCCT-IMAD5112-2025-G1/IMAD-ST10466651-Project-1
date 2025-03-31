@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "vcmsa.ci.meal_plannerimad_10466651"
+    namespace = "za.co.varsitycollege.st10466651_Assignment1"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "vcmsa.ci.meal_plannerimad_10466651"
+        applicationId = "za.co.varsitycollege.st10466651_Assignment1"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
