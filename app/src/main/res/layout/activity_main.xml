@@ -5,4 +5,123 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="@drawable/aria_pink_and_white_gradient_leah_mcphail__1_"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textMeals4"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="serif"
+        android:textAlignment="textStart"
+        android:textColor="#0B2CDE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <Button
+        android:id="@+id/tips"
+        android:layout_width="98dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="289dp"
+        android:text="Get Tips"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reset"
+        app:layout_constraintTop_toBottomOf="@id/textTime"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="93dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="289dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTime"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <EditText
+        android:id="@+id/textTime"
+        android:layout_width="244dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="453dp"
+        android:fontFamily="serif"
+        android:hint="Time Of Day"
+        android:textAlignment="center"
+        android:textColor="#0B2DE6"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHint" />
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="271dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="584dp"
+        android:fontFamily="serif"
+        android:text="A helping hand with meals"
+        android:textAlignment="center"
+        android:textColor="#0E2EE0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="376dp"
+        android:layout_height="77dp"
+        android:fontFamily="serif"
+        android:text="DishCovery"
+        android:textAlignment="center"
+        android:textColor="#580AE2"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/timeSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="138dp"
+        android:fontFamily="serif"
+        android:textColor="#5A0BE6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textMeals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTime"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
