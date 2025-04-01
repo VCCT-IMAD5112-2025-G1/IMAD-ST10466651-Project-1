@@ -22,7 +22,7 @@ It is locked to only using word phrases
 
 #### How do I fix my app that crashed?
 
-Answer 2
+Close and reopen the app, if not then call tech support
 
 
 ## Screenshots
