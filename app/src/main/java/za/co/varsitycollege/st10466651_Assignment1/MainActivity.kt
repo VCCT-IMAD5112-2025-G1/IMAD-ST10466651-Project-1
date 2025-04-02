@@ -134,7 +134,8 @@ class MainActivity : AppCompatActivity() {
             if (timeOfDay.isEmpty() || !validTimeOfDay.contains(timeOfDay)) {
                 val builder = AlertDialog.Builder(this)
                 builder.setTitle("Input Required")
-                builder.setMessage("Please enter a valid time of day (e.g. breakfast, mid-morning, lunch, mid-afternoon, dinner)")
+                builder.setMessage("Please enter a valid time of day (e.g. breakfast, mid-morning, lunch, " +
+                        "mid-afternoon, dinner)")
                 builder.setPositiveButton("OK") { dialog, _ ->
                     dialog.dismiss()
                 }
